@@ -1,54 +1,35 @@
-/* Reset default styles */
-* {
+/* Reset & Global Styles */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Centering everything */
-body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f2f5ec; /* Light background */
+    background-color: #f2f5ec;
 }
 
-/* Responsive Image Container */
+/* Menu Container */
 .menu-container {
-    width: 100%;
-    max-width: 1200px; /* Ensures it doesn’t get too large */
+    width: 90%;
+    max-width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
-/* Fully Responsive Image */
+/* Responsive Image */
 .responsive-menu {
     width: 100%;
     height: auto;
-    max-width: 1000px; /* Prevents excessive stretching */
-    object-fit: cover;
     display: block;
-    border-radius: 10px; /* Optional rounded edges */
+    border-radius: 10px; /* Optional rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
-/* Ensure No Overflow on Small Screens */
-@media (max-width: 768px) {
+/* Mobile-Friendly Adjustments */
+@media (max-width: 600px) {
     .menu-container {
-        padding: 5px;
-    }
-    
-    .responsive-menu {
-        max-width: 90%; /* Adjusts for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .responsive-menu {
-        max-width: 100%; /* Fills the screen */
-        border-radius: 5px; /* Slightly rounded corners for mobile */
+        width: 95%;
     }
 }
